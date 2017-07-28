@@ -16,6 +16,9 @@
 		3D2671FF1F2BC252000580C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671FE1F2BC252000580C7 /* ViewController.swift */; };
 		3D2672011F2BC295000580C7 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672001F2BC295000580C7 /* GridViewModel.swift */; };
 		3D2672031F2BC313000580C7 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672021F2BC313000580C7 /* GridViewController.swift */; };
+		3D2672061F2BDAEA000580C7 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672051F2BDAEA000580C7 /* ApiClient.swift */; };
+		3D2672081F2BDB6B000580C7 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */; };
+		3D26720A1F2BDCA1000580C7 /* ChoosePlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3D2671FE1F2BC252000580C7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D2672001F2BC295000580C7 /* GridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		3D2672021F2BC313000580C7 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		3D2672051F2BDAEA000580C7 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
+		3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		3D2671CC1F2BBC45000580C7 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				3D2672041F2BDAD0000580C7 /* Classes */,
 				3D2671FC1F2BC237000580C7 /* Models */,
 				3D2671FD1F2BC237000580C7 /* ViewControllers */,
 				3D2671FB1F2BC231000580C7 /* ViewModels */,
@@ -151,8 +158,18 @@
 			children = (
 				3D2671FE1F2BC252000580C7 /* ViewController.swift */,
 				3D2672021F2BC313000580C7 /* GridViewController.swift */,
+				3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */,
+				3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D2672041F2BDAD0000580C7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3D2672051F2BDAEA000580C7 /* ApiClient.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D26720A1F2BDCA1000580C7 /* ChoosePlayersViewController.swift in Sources */,
 				3D2672031F2BC313000580C7 /* GridViewController.swift in Sources */,
 				3D2672011F2BC295000580C7 /* GridViewModel.swift in Sources */,
 				3D2671FF1F2BC252000580C7 /* ViewController.swift in Sources */,
+				3D2672081F2BDB6B000580C7 /* HighScoresViewController.swift in Sources */,
 				3D2671CE1F2BBC45000580C7 /* AppDelegate.swift in Sources */,
+				3D2672061F2BDAEA000580C7 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

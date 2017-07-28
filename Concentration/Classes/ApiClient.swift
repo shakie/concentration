@@ -1,5 +1,5 @@
 //
-//  GridViewModel.swift
+//  ApiClient.swift
 //  Concentration
 //
 //  Created by Shaun Rowe on 28/07/2017.
@@ -7,11 +7,3 @@
 //
 
 import Foundation
-
-protocol GridViewModel {
-    var rows: Int { get }
-}
-
-extension GridViewModel {
-    
-}
