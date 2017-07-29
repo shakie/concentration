@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJB-Gb-EGE">
-                                <rect key="frame" x="36" y="84" width="303" height="43"/>
+                                <rect key="frame" x="36" y="40" width="303" height="43"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -53,9 +53,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jtz-GD-0zC"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="4ih-5v-GBq" kind="show" id="GME-ni-z5i"/>
-                        <segue destination="EaE-S9-zkw" kind="show" id="MWz-7t-22T"/>
+                        <segue destination="4ih-5v-GBq" kind="show" identifier="segue_view_high_scores" id="GME-ni-z5i"/>
+                        <segue destination="EaE-S9-zkw" kind="show" identifier="segue_start_game" id="MWz-7t-22T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,6 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yyr-FL-YK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,8 +113,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="4ih-5v-GBq" kind="show" id="C3L-xj-yHk"/>
+                        <segue destination="4ih-5v-GBq" kind="show" identifier="segue_show_high_scores" id="C3L-xj-yHk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujV-Ip-uWf" userLabel="First Responder" sceneMemberID="firstResponder"/>

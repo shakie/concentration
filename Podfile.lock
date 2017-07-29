@@ -11,11 +11,13 @@ PODS:
   - RealmSwift (2.9.0):
     - Realm (= 2.9.0)
   - Result (3.2.3)
+  - SVProgressHUD (2.1.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Moya
   - RealmSwift
+  - SVProgressHUD
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -24,8 +26,9 @@ SPEC CHECKSUMS:
   Realm: f14ab1673502559cb16592ddb8f383c474c13e05
   RealmSwift: 16ad2c187042c4934f49750375582fe508627dcb
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 0580165322cc2ab6593d9e22ec6bd7b25b552030
+PODFILE CHECKSUM: 41f19749630a03a6fe3edbdb359736880de4aa7e
 
 COCOAPODS: 1.2.0

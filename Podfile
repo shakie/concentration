@@ -5,4 +5,5 @@ target 'Concentration' do
     pod 'RealmSwift'
     pod 'SwiftyJSON'
     pod 'Moya'
+    pod 'SVProgressHUD'
 end
