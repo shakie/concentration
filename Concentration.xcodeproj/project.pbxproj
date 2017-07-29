@@ -13,12 +13,13 @@
 		3D2671D81F2BBC45000580C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2671D61F2BBC45000580C7 /* LaunchScreen.storyboard */; };
 		3D2671E31F2BBC45000580C7 /* ConcentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671E21F2BBC45000580C7 /* ConcentrationTests.swift */; };
 		3D2671EE1F2BBC45000580C7 /* ConcentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671ED1F2BBC45000580C7 /* ConcentrationUITests.swift */; };
-		3D2671FF1F2BC252000580C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671FE1F2BC252000580C7 /* ViewController.swift */; };
+		3D2671FF1F2BC252000580C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671FE1F2BC252000580C7 /* HomeViewController.swift */; };
 		3D2672011F2BC295000580C7 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672001F2BC295000580C7 /* GridViewModel.swift */; };
 		3D2672031F2BC313000580C7 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672021F2BC313000580C7 /* GridViewController.swift */; };
 		3D2672061F2BDAEA000580C7 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672051F2BDAEA000580C7 /* ApiClient.swift */; };
 		3D2672081F2BDB6B000580C7 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */; };
 		3D26720A1F2BDCA1000580C7 /* ChoosePlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */; };
+		4F8E3CD4A3E7406666E9590C /* Pods_Concentration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +52,15 @@
 		3D2671E91F2BBC45000580C7 /* ConcentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2671ED1F2BBC45000580C7 /* ConcentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITests.swift; sourceTree = "<group>"; };
 		3D2671EF1F2BBC45000580C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D2671FE1F2BC252000580C7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D2671FE1F2BC252000580C7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3D2672001F2BC295000580C7 /* GridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		3D2672021F2BC313000580C7 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		3D2672051F2BDAEA000580C7 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
 		3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePlayersViewController.swift; sourceTree = "<group>"; };
+		77CB7927C8EBA746A0617564 /* Pods-Concentration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concentration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Concentration/Pods-Concentration.debug.xcconfig"; sourceTree = "<group>"; };
+		8A01D823D1461A09E3B810AE /* Pods-Concentration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concentration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concentration/Pods-Concentration.release.xcconfig"; sourceTree = "<group>"; };
+		BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concentration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8E3CD4A3E7406666E9590C /* Pods_Concentration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,8 @@
 				3D2671E11F2BBC45000580C7 /* ConcentrationTests */,
 				3D2671EC1F2BBC45000580C7 /* ConcentrationUITests */,
 				3D2671CB1F2BBC45000580C7 /* Products */,
+				F0AF1F8EA83051E7A1A5EBEE /* Pods */,
+				7468F819719548A8E5975E18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +163,7 @@
 		3D2671FD1F2BC237000580C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D2671FE1F2BC252000580C7 /* ViewController.swift */,
+				3D2671FE1F2BC252000580C7 /* HomeViewController.swift */,
 				3D2672021F2BC313000580C7 /* GridViewController.swift */,
 				3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */,
 				3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */,
@@ -172,6 +179,23 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		7468F819719548A8E5975E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0AF1F8EA83051E7A1A5EBEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77CB7927C8EBA746A0617564 /* Pods-Concentration.debug.xcconfig */,
+				8A01D823D1461A09E3B810AE /* Pods-Concentration.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2671F21F2BBC45000580C7 /* Build configuration list for PBXNativeTarget "Concentration" */;
 			buildPhases = (
+				29648D354D0A33C11F563106 /* [CP] Check Pods Manifest.lock */,
 				3D2671C61F2BBC45000580C7 /* Sources */,
 				3D2671C71F2BBC45000580C7 /* Frameworks */,
 				3D2671C81F2BBC45000580C7 /* Resources */,
+				027103DDBB36B05D4D85A457 /* [CP] Embed Pods Frameworks */,
+				73D8FA07F52810B27CE68322 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +328,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		027103DDBB36B05D4D85A457 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Concentration/Pods-Concentration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29648D354D0A33C11F563106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73D8FA07F52810B27CE68322 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Concentration/Pods-Concentration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D2671C61F2BBC45000580C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,7 +384,7 @@
 				3D26720A1F2BDCA1000580C7 /* ChoosePlayersViewController.swift in Sources */,
 				3D2672031F2BC313000580C7 /* GridViewController.swift in Sources */,
 				3D2672011F2BC295000580C7 /* GridViewModel.swift in Sources */,
-				3D2671FF1F2BC252000580C7 /* ViewController.swift in Sources */,
+				3D2671FF1F2BC252000580C7 /* HomeViewController.swift in Sources */,
 				3D2672081F2BDB6B000580C7 /* HighScoresViewController.swift in Sources */,
 				3D2671CE1F2BBC45000580C7 /* AppDelegate.swift in Sources */,
 				3D2672061F2BDAEA000580C7 /* ApiClient.swift in Sources */,
@@ -464,6 +539,7 @@
 		};
 		3D2671F31F2BBC45000580C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CB7927C8EBA746A0617564 /* Pods-Concentration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -477,6 +553,7 @@
 		};
 		3D2671F41F2BBC45000580C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A01D823D1461A09E3B810AE /* Pods-Concentration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
