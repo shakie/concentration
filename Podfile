@@ -4,6 +4,11 @@ use_frameworks!
 target 'Concentration' do
     pod 'RealmSwift'
     pod 'SwiftyJSON'
-    pod 'Moya'
+    pod 'Moya/RxSwift'
+    pod 'Moya-SwiftyJSONMapper/RxSwift'
     pod 'SVProgressHUD'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'Quick'
+    pod 'Nimble'
 end

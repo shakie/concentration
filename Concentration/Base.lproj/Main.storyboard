@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AVS-ty-tL8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AVS-ty-tL8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,8 +38,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJB-Gb-EGE">
-                                <rect key="frame" x="36" y="40" width="303" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concentration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJB-Gb-EGE">
+                                <rect key="frame" x="36" y="30" width="303" height="43"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="IJB-Gb-EGE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="PZ7-1Y-63k"/>
+                            <constraint firstItem="IJB-Gb-EGE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="PZ7-1Y-63k"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IJB-Gb-EGE" secondAttribute="trailing" constant="20" id="RX8-wE-gcO"/>
                             <constraint firstItem="IJB-Gb-EGE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="tMR-Xr-Kcs"/>
                         </constraints>
@@ -56,7 +56,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="4ih-5v-GBq" kind="show" identifier="segue_view_high_scores" id="GME-ni-z5i"/>
-                        <segue destination="EaE-S9-zkw" kind="show" identifier="segue_start_game" id="MWz-7t-22T"/>
+                        <segue destination="57W-ji-W2T" kind="show" id="swY-Rx-LbC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,30 +100,39 @@
             </objects>
             <point key="canvasLocation" x="25" y="-665"/>
         </scene>
-        <!--Grid View Controller-->
-        <scene sceneID="0hA-07-ddf">
+        <!--Game View Controller-->
+        <scene sceneID="AUr-d8-wEg">
             <objects>
-                <viewController id="EaE-S9-zkw" customClass="GridViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zeD-jm-fqu"/>
-                        <viewControllerLayoutGuide type="bottom" id="4qa-on-HPt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VsV-R9-VMF">
+                <collectionViewController id="57W-ji-W2T" customClass="GameViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ANL-Qg-8VF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <segue destination="4ih-5v-GBq" kind="show" identifier="segue_show_high_scores" id="C3L-xj-yHk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ujV-Ip-uWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C9j-qY-2Hh">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1ur-lV-tfp">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="57W-ji-W2T" id="8cT-tN-Bw9"/>
+                            <outlet property="delegate" destination="57W-ji-W2T" id="Gqa-bX-pxR"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmk-0w-5bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="-381"/>
+            <point key="canvasLocation" x="812" y="-310"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="GME-ni-z5i"/>
-    </inferredMetricsTieBreakers>
 </document>
