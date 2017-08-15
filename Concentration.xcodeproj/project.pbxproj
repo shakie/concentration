@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4F76D334B0263B8FEA5A36 /* Pods_ConcentrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8271F3BFB5AF325492DFD4 /* Pods_ConcentrationUITests.framework */; };
 		3D2671CE1F2BBC45000580C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671CD1F2BBC45000580C7 /* AppDelegate.swift */; };
 		3D2671D31F2BBC45000580C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2671D11F2BBC45000580C7 /* Main.storyboard */; };
 		3D2671D51F2BBC45000580C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2671D41F2BBC45000580C7 /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 		3DEC503A1F3C754D0083FE8F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC50391F3C754D0083FE8F /* ApiClient.swift */; };
 		3DEC503C1F3C76380083FE8F /* FiveHundredPx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC503B1F3C76380083FE8F /* FiveHundredPx.swift */; };
 		3DEC503E1F3D1E130083FE8F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC503D1F3D1E130083FE8F /* Photo.swift */; };
+		3DF1D2D41F421506007A7836 /* ConcentrationEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1D2D31F421506007A7836 /* ConcentrationEngineSpec.swift */; };
+		4012E27175DD13F6CD49BC86 /* Pods_ConcentrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70AF90DDDEFA2D4DFB627D /* Pods_ConcentrationTests.framework */; };
 		4F8E3CD4A3E7406666E9590C /* Pods_Concentration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C70AF90DDDEFA2D4DFB627D /* Pods_ConcentrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcentrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2671CA1F2BBC45000580C7 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2671CD1F2BBC45000580C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D2671D21F2BBC45000580C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,9 +68,15 @@
 		3DEC50391F3C754D0083FE8F /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		3DEC503B1F3C76380083FE8F /* FiveHundredPx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveHundredPx.swift; sourceTree = "<group>"; };
 		3DEC503D1F3D1E130083FE8F /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3DF1D2D31F421506007A7836 /* ConcentrationEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentrationEngineSpec.swift; sourceTree = "<group>"; };
+		5B3E1461770BE87200B8CF2A /* Pods-ConcentrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcentrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConcentrationTests/Pods-ConcentrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77CB7927C8EBA746A0617564 /* Pods-Concentration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concentration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Concentration/Pods-Concentration.debug.xcconfig"; sourceTree = "<group>"; };
+		85026D787F8EDF9E7A09A4B6 /* Pods-ConcentrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcentrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConcentrationTests/Pods-ConcentrationTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A01D823D1461A09E3B810AE /* Pods-Concentration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concentration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Concentration/Pods-Concentration.release.xcconfig"; sourceTree = "<group>"; };
+		8C8271F3BFB5AF325492DFD4 /* Pods_ConcentrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConcentrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCA30FB9C2574555E9B9E1F /* Pods-ConcentrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcentrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConcentrationUITests/Pods-ConcentrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concentration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0664EA5D6285623027E5ADA /* Pods-ConcentrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcentrationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConcentrationUITests/Pods-ConcentrationUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4012E27175DD13F6CD49BC86 /* Pods_ConcentrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4F76D334B0263B8FEA5A36 /* Pods_ConcentrationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +149,7 @@
 		3D2671E11F2BBC45000580C7 /* ConcentrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				3DF1D2D31F421506007A7836 /* ConcentrationEngineSpec.swift */,
 				3D2671E21F2BBC45000580C7 /* ConcentrationTests.swift */,
 				3D2671E41F2BBC45000580C7 /* Info.plist */,
 			);
@@ -192,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */,
+				3C70AF90DDDEFA2D4DFB627D /* Pods_ConcentrationTests.framework */,
+				8C8271F3BFB5AF325492DFD4 /* Pods_ConcentrationUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,6 +216,10 @@
 			children = (
 				77CB7927C8EBA746A0617564 /* Pods-Concentration.debug.xcconfig */,
 				8A01D823D1461A09E3B810AE /* Pods-Concentration.release.xcconfig */,
+				5B3E1461770BE87200B8CF2A /* Pods-ConcentrationTests.debug.xcconfig */,
+				85026D787F8EDF9E7A09A4B6 /* Pods-ConcentrationTests.release.xcconfig */,
+				9FCA30FB9C2574555E9B9E1F /* Pods-ConcentrationUITests.debug.xcconfig */,
+				D0664EA5D6285623027E5ADA /* Pods-ConcentrationUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -232,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2671F51F2BBC45000580C7 /* Build configuration list for PBXNativeTarget "ConcentrationTests" */;
 			buildPhases = (
+				B84E5A7EBBF1CAE838DD115A /* [CP] Check Pods Manifest.lock */,
 				3D2671DA1F2BBC45000580C7 /* Sources */,
 				3D2671DB1F2BBC45000580C7 /* Frameworks */,
 				3D2671DC1F2BBC45000580C7 /* Resources */,
+				F1C442F4F661268A9A04CB48 /* [CP] Embed Pods Frameworks */,
+				0AC4911F8B7D735D5185E442 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2671F81F2BBC45000580C7 /* Build configuration list for PBXNativeTarget "ConcentrationUITests" */;
 			buildPhases = (
+				21A5CBA04061DBA41B1CECB1 /* [CP] Check Pods Manifest.lock */,
 				3D2671E51F2BBC45000580C7 /* Sources */,
 				3D2671E61F2BBC45000580C7 /* Frameworks */,
 				3D2671E71F2BBC45000580C7 /* Resources */,
+				518351880C56574394F80459 /* [CP] Embed Pods Frameworks */,
+				CC499EC2631ECC59D84DCA63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,6 +380,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Concentration/Pods-Concentration-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0AC4911F8B7D735D5185E442 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcentrationTests/Pods-ConcentrationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21A5CBA04061DBA41B1CECB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		29648D354D0A33C11F563106 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +425,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		518351880C56574394F80459 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcentrationUITests/Pods-ConcentrationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		73D8FA07F52810B27CE68322 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +453,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Concentration/Pods-Concentration-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B84E5A7EBBF1CAE838DD115A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC499EC2631ECC59D84DCA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcentrationUITests/Pods-ConcentrationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C442F4F661268A9A04CB48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ConcentrationTests/Pods-ConcentrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -408,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF1D2D41F421506007A7836 /* ConcentrationEngineSpec.swift in Sources */,
 				3D2671E31F2BBC45000580C7 /* ConcentrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +696,7 @@
 		};
 		3D2671F61F2BBC45000580C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B3E1461770BE87200B8CF2A /* Pods-ConcentrationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +711,7 @@
 		};
 		3D2671F71F2BBC45000580C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85026D787F8EDF9E7A09A4B6 /* Pods-ConcentrationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -608,6 +726,7 @@
 		};
 		3D2671F91F2BBC45000580C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCA30FB9C2574555E9B9E1F /* Pods-ConcentrationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ConcentrationUITests/Info.plist;
@@ -621,6 +740,7 @@
 		};
 		3D2671FA1F2BBC45000580C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0664EA5D6285623027E5ADA /* Pods-ConcentrationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ConcentrationUITests/Info.plist;
