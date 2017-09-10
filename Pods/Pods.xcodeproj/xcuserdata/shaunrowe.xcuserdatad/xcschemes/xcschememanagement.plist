@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya-SwiftyJSONMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,12 +64,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxBlocking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxNimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -82,12 +102,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01270F0E556A1BD1CD3BB10688070DDB</key>
+		<key>08437066648ABFE3433567C6AA5A5BCE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0617D4344E254B493C318285112B6AF8</key>
+		<key>101390C57FF4FC5D8276900917B764FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>12B474DFBDEB00A040EA2897A68B8221</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EE4F7D2882AD6EA0D2879BC33947436</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2675640F08C95E796DDC46A6C7C5EF29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +132,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E4A97A51BE9BDB8773BA3E1BE555DAC</key>
+		<key>2DCDC7FCB68C323AB4DAAC8A2EC9E39F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>796210EDE63016AB8F4A798757A047DE</key>
+		<key>2E97B3D000A8F2F376394A69BBB750FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F712943B3C5592E82604940D11CE08A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +152,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8775C81492871AF87EE11808658BEACC</key>
+		<key>82C31857414F0ADD74A80AB375D55D34</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,17 +167,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B5A8D673AF27A3DAF9C0126C43731110</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C419A9BCC9AACDC44A26B80764B6B554</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1761D63DF81ED491C3EC6D4077C28CF</key>
+		<key>D035BC4B0E6699ED08E18CB236B149E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D46CA57A9A25E2C0C155CAF017B3994B</key>
+		<key>D4071C60862882215751A4930E67AC2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -148,11 +193,6 @@
 			<true/>
 		</dict>
 		<key>EFDB85DF4827734B35E8A46720ACAEE0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F9D79B91B7A93B606DF0DA9802B8FD89</key>
 		<dict>
 			<key>primary</key>
 			<true/>

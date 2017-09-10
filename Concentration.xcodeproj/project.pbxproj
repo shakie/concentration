@@ -12,18 +12,26 @@
 		3D2671D31F2BBC45000580C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2671D11F2BBC45000580C7 /* Main.storyboard */; };
 		3D2671D51F2BBC45000580C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2671D41F2BBC45000580C7 /* Assets.xcassets */; };
 		3D2671D81F2BBC45000580C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2671D61F2BBC45000580C7 /* LaunchScreen.storyboard */; };
-		3D2671E31F2BBC45000580C7 /* ConcentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671E21F2BBC45000580C7 /* ConcentrationTests.swift */; };
 		3D2671EE1F2BBC45000580C7 /* ConcentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671ED1F2BBC45000580C7 /* ConcentrationUITests.swift */; };
 		3D2671FF1F2BC252000580C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2671FE1F2BC252000580C7 /* HomeViewController.swift */; };
 		3D2672011F2BC295000580C7 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672001F2BC295000580C7 /* GridViewModel.swift */; };
 		3D2672081F2BDB6B000580C7 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */; };
 		3D26720A1F2BDCA1000580C7 /* ChoosePlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */; };
 		3D7893201F2CD2E600192FEF /* FiveHundredPx.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D78931F1F2CD2E600192FEF /* FiveHundredPx.plist */; };
-		3DEC50371F3C6A790083FE8F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC50361F3C6A780083FE8F /* GameViewController.swift */; };
+		3D78D2BE1F43478E00DA3F62 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D78D2BD1F43478E00DA3F62 /* GameViewController.swift */; };
+		3D9477591F449172002D5EF6 /* ConcentrationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9477581F449172002D5EF6 /* ConcentrationEngine.swift */; };
+		3D94775B1F44A111002D5EF6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D94775A1F44A111002D5EF6 /* Game.swift */; };
+		3D94775D1F44C0F8002D5EF6 /* ApiClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D94775C1F44C0F8002D5EF6 /* ApiClientSpec.swift */; };
+		3D94775F1F44E64E002D5EF6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D94775E1F44E64E002D5EF6 /* Player.swift */; };
+		3D9477611F44E859002D5EF6 /* Migrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9477601F44E859002D5EF6 /* Migrations.swift */; };
+		3D9477641F44FBF1002D5EF6 /* sample_search.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D9477631F44FBF1002D5EF6 /* sample_search.json */; };
+		3D9477661F4501B9002D5EF6 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9477651F4501B9002D5EF6 /* Search.swift */; };
 		3DEC503A1F3C754D0083FE8F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC50391F3C754D0083FE8F /* ApiClient.swift */; };
 		3DEC503C1F3C76380083FE8F /* FiveHundredPx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC503B1F3C76380083FE8F /* FiveHundredPx.swift */; };
 		3DEC503E1F3D1E130083FE8F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC503D1F3D1E130083FE8F /* Photo.swift */; };
 		3DF1D2D41F421506007A7836 /* ConcentrationEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1D2D31F421506007A7836 /* ConcentrationEngineSpec.swift */; };
+		3DFC28861F4707BA00B5D3CC /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFC28851F4707BA00B5D3CC /* PhotoCollectionViewCell.swift */; };
+		3DFC28881F47096300B5D3CC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DFC28871F47096300B5D3CC /* logo.png */; };
 		4012E27175DD13F6CD49BC86 /* Pods_ConcentrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70AF90DDDEFA2D4DFB627D /* Pods_ConcentrationTests.framework */; };
 		4F8E3CD4A3E7406666E9590C /* Pods_Concentration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED9CDFC4D5E65B627DEA286 /* Pods_Concentration.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +62,6 @@
 		3D2671D71F2BBC45000580C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D2671D91F2BBC45000580C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D2671DE1F2BBC45000580C7 /* ConcentrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D2671E21F2BBC45000580C7 /* ConcentrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationTests.swift; sourceTree = "<group>"; };
 		3D2671E41F2BBC45000580C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D2671E91F2BBC45000580C7 /* ConcentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2671ED1F2BBC45000580C7 /* ConcentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITests.swift; sourceTree = "<group>"; };
@@ -64,11 +71,20 @@
 		3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
 		3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePlayersViewController.swift; sourceTree = "<group>"; };
 		3D78931F1F2CD2E600192FEF /* FiveHundredPx.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FiveHundredPx.plist; sourceTree = "<group>"; };
-		3DEC50361F3C6A780083FE8F /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3D78D2BD1F43478E00DA3F62 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3D9477581F449172002D5EF6 /* ConcentrationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentrationEngine.swift; sourceTree = "<group>"; };
+		3D94775A1F44A111002D5EF6 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3D94775C1F44C0F8002D5EF6 /* ApiClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientSpec.swift; sourceTree = "<group>"; };
+		3D94775E1F44E64E002D5EF6 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3D9477601F44E859002D5EF6 /* Migrations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrations.swift; sourceTree = "<group>"; };
+		3D9477631F44FBF1002D5EF6 /* sample_search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_search.json; sourceTree = "<group>"; };
+		3D9477651F4501B9002D5EF6 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		3DEC50391F3C754D0083FE8F /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		3DEC503B1F3C76380083FE8F /* FiveHundredPx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveHundredPx.swift; sourceTree = "<group>"; };
 		3DEC503D1F3D1E130083FE8F /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		3DF1D2D31F421506007A7836 /* ConcentrationEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentrationEngineSpec.swift; sourceTree = "<group>"; };
+		3DFC28851F4707BA00B5D3CC /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DFC28871F47096300B5D3CC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		5B3E1461770BE87200B8CF2A /* Pods-ConcentrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcentrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConcentrationTests/Pods-ConcentrationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77CB7927C8EBA746A0617564 /* Pods-Concentration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concentration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Concentration/Pods-Concentration.debug.xcconfig"; sourceTree = "<group>"; };
 		85026D787F8EDF9E7A09A4B6 /* Pods-ConcentrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConcentrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConcentrationTests/Pods-ConcentrationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +126,7 @@
 		3D2671C11F2BBC45000580C7 = {
 			isa = PBXGroup;
 			children = (
+				3D9477621F44FBE1002D5EF6 /* Resources */,
 				3D2671CC1F2BBC45000580C7 /* Concentration */,
 				3D2671E11F2BBC45000580C7 /* ConcentrationTests */,
 				3D2671EC1F2BBC45000580C7 /* ConcentrationUITests */,
@@ -132,7 +149,9 @@
 		3D2671CC1F2BBC45000580C7 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				3D9477571F44913C002D5EF6 /* Engine */,
 				3D2671FC1F2BC237000580C7 /* Models */,
+				3DFC28821F47073900B5D3CC /* Views */,
 				3D2671FD1F2BC237000580C7 /* ViewControllers */,
 				3D2671FB1F2BC231000580C7 /* ViewModels */,
 				3DEC50381F3C754D0083FE8F /* Webservices */,
@@ -149,8 +168,8 @@
 		3D2671E11F2BBC45000580C7 /* ConcentrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				3D94775C1F44C0F8002D5EF6 /* ApiClientSpec.swift */,
 				3DF1D2D31F421506007A7836 /* ConcentrationEngineSpec.swift */,
-				3D2671E21F2BBC45000580C7 /* ConcentrationTests.swift */,
 				3D2671E41F2BBC45000580C7 /* Info.plist */,
 			);
 			path = ConcentrationTests;
@@ -176,7 +195,11 @@
 		3D2671FC1F2BC237000580C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3D94775A1F44A111002D5EF6 /* Game.swift */,
 				3DEC503D1F3D1E130083FE8F /* Photo.swift */,
+				3D94775E1F44E64E002D5EF6 /* Player.swift */,
+				3D9477601F44E859002D5EF6 /* Migrations.swift */,
+				3D9477651F4501B9002D5EF6 /* Search.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,12 +207,29 @@
 		3D2671FD1F2BC237000580C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D2671FE1F2BC252000580C7 /* HomeViewController.swift */,
-				3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */,
 				3D2672091F2BDCA1000580C7 /* ChoosePlayersViewController.swift */,
-				3DEC50361F3C6A780083FE8F /* GameViewController.swift */,
+				3D78D2BD1F43478E00DA3F62 /* GameViewController.swift */,
+				3D2672071F2BDB6B000580C7 /* HighScoresViewController.swift */,
+				3D2671FE1F2BC252000580C7 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D9477571F44913C002D5EF6 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				3D9477581F449172002D5EF6 /* ConcentrationEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		3D9477621F44FBE1002D5EF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DFC28871F47096300B5D3CC /* logo.png */,
+				3D9477631F44FBF1002D5EF6 /* sample_search.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3DEC50381F3C754D0083FE8F /* Webservices */ = {
@@ -199,6 +239,14 @@
 				3DEC503B1F3C76380083FE8F /* FiveHundredPx.swift */,
 			);
 			path = Webservices;
+			sourceTree = "<group>";
+		};
+		3DFC28821F47073900B5D3CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DFC28851F4707BA00B5D3CC /* PhotoCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7468F819719548A8E5975E18 /* Frameworks */ = {
@@ -343,6 +391,8 @@
 			files = (
 				3D2671D81F2BBC45000580C7 /* LaunchScreen.storyboard in Resources */,
 				3D7893201F2CD2E600192FEF /* FiveHundredPx.plist in Resources */,
+				3DFC28881F47096300B5D3CC /* logo.png in Resources */,
+				3D9477641F44FBF1002D5EF6 /* sample_search.json in Resources */,
 				3D2671D51F2BBC45000580C7 /* Assets.xcassets in Resources */,
 				3D2671D31F2BBC45000580C7 /* Main.storyboard in Resources */,
 			);
@@ -508,14 +558,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEC503A1F3C754D0083FE8F /* ApiClient.swift in Sources */,
-				3DEC50371F3C6A790083FE8F /* GameViewController.swift in Sources */,
 				3DEC503C1F3C76380083FE8F /* FiveHundredPx.swift in Sources */,
 				3DEC503E1F3D1E130083FE8F /* Photo.swift in Sources */,
 				3D26720A1F2BDCA1000580C7 /* ChoosePlayersViewController.swift in Sources */,
+				3D94775F1F44E64E002D5EF6 /* Player.swift in Sources */,
+				3D78D2BE1F43478E00DA3F62 /* GameViewController.swift in Sources */,
+				3D9477591F449172002D5EF6 /* ConcentrationEngine.swift in Sources */,
+				3D9477611F44E859002D5EF6 /* Migrations.swift in Sources */,
+				3D94775B1F44A111002D5EF6 /* Game.swift in Sources */,
 				3D2672011F2BC295000580C7 /* GridViewModel.swift in Sources */,
 				3D2671FF1F2BC252000580C7 /* HomeViewController.swift in Sources */,
+				3DFC28861F4707BA00B5D3CC /* PhotoCollectionViewCell.swift in Sources */,
 				3D2672081F2BDB6B000580C7 /* HighScoresViewController.swift in Sources */,
 				3D2671CE1F2BBC45000580C7 /* AppDelegate.swift in Sources */,
+				3D9477661F4501B9002D5EF6 /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,8 +579,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D94775D1F44C0F8002D5EF6 /* ApiClientSpec.swift in Sources */,
 				3DF1D2D41F421506007A7836 /* ConcentrationEngineSpec.swift in Sources */,
-				3D2671E31F2BBC45000580C7 /* ConcentrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

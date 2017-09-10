@@ -57,6 +57,14 @@ extension FiveHundredPx: TargetType {
         }
     }
     var sampleData: Data {
-        return Data()
+        switch self {
+        case .search:
+            guard let url = Bundle.main.url(forResource: "sample_search", withExtension: "json"),
+                let data = try? Data(contentsOf: url) else {
+                    print("Uh oh, bad data")
+                    return Data()
+            }
+            return data
+        }
     }
 }

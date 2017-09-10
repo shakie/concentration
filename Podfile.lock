@@ -1,5 +1,6 @@
 PODS:
-  - Alamofire (4.5.0)
+  - Alamofire (4.5.1)
+  - Kingfisher (3.12.2)
   - Moya (8.0.5):
     - Moya/Core (= 8.0.5)
   - Moya-SwiftyJSONMapper/Core (2.2.0):
@@ -16,43 +17,59 @@ PODS:
     - RxSwift (~> 3.0)
   - Nimble (7.0.1)
   - Quick (1.1.0)
-  - Realm (2.9.0):
-    - Realm/Headers (= 2.9.0)
-  - Realm/Headers (2.9.0)
-  - RealmSwift (2.9.0):
-    - Realm (= 2.9.0)
+  - Realm (2.10.0):
+    - Realm/Headers (= 2.10.0)
+  - Realm/Headers (2.10.0)
+  - RealmSwift (2.10.0):
+    - Realm (= 2.10.0)
   - Result (3.2.3)
+  - RxBlocking (3.6.1):
+    - RxSwift (~> 3.6)
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
+  - RxNimble (3.0.0):
+    - Nimble (~> 7.0)
+    - RxBlocking (~> 3.0)
+    - RxSwift (~> 3.0)
   - RxSwift (3.6.1)
-  - SVProgressHUD (2.1.2)
+  - RxTest (3.6.1):
+    - RxSwift (~> 3.6)
+  - SVProgressHUD (2.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Kingfisher (~> 3.0)
   - Moya-SwiftyJSONMapper/RxSwift
   - Moya/RxSwift
   - Nimble
   - Quick
   - RealmSwift
+  - RxBlocking
   - RxCocoa
+  - RxNimble
   - RxSwift
+  - RxTest
   - SVProgressHUD
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Kingfisher: 320626678acadfcf47008b3c6841cd882050737b
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
   Moya-SwiftyJSONMapper: 03c9d3e562c9025c8c00fa3ec97ae1da61a2be37
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
-  Realm: f14ab1673502559cb16592ddb8f383c474c13e05
-  RealmSwift: 16ad2c187042c4934f49750375582fe508627dcb
+  Realm: 98b3a25643cf6b3e07d2b99fb43fe0eb9c801dec
+  RealmSwift: 34073ad3a31232bbaf7c0db898c037940284cba2
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  RxBlocking: 4f4bd5732e8b952e54ae8a57739bcfb645de12bc
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxNimble: 64ef7b0eb8edb423b088773f35d14dda37593460
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
-  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  RxTest: 1d00348a7848c91ab5bf5d197d2378aa6b2bb356
+  SVProgressHUD: 3f37f3409ddb15f35c99315ae7dc33c474aa3256
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: dd650fb2c62bd004fb632ce3771fe93587e7558e
+PODFILE CHECKSUM: eb19bf4bc2ed1b6f45731ecee64dd1737575b0e1
 
 COCOAPODS: 1.2.0
