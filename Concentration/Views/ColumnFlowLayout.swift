@@ -16,6 +16,7 @@ class ColumnFlowLayout: UICollectionViewFlowLayout {
             guard let collectionView = collectionView else { return super.itemSize }
             let marginsAndInsets = sectionInset.left + sectionInset.right + minimumInteritemSpacing * CGFloat(cellsPerRow - 1)
             let itemWidth = ((collectionView.bounds.size.width - marginsAndInsets) / CGFloat(cellsPerRow)).rounded(.down)
+            
             return CGSize(width: itemWidth, height: itemWidth)
         }
         set {
@@ -23,7 +24,7 @@ class ColumnFlowLayout: UICollectionViewFlowLayout {
         }
     }
     
-    init(cellsPerRow: Int = 4, minimumInteritemSpacing: CGFloat = 5, minimumLineSpacing: CGFloat = 5, sectionInset: UIEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)) {
+    init(cellsPerRow: Int = 4, minimumInteritemSpacing: CGFloat = 5, minimumLineSpacing: CGFloat = 5, sectionInset: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) {
         self.cellsPerRow = cellsPerRow
         super.init()
         

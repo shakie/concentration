@@ -24,8 +24,7 @@ struct ApiClient {
             .filterSuccessfulStatusCodes()
             .map(to: Search.self).subscribe(
                 onNext: { (response) -> Void in
-                    var photos = response.photos
-                    next(photos.shuffle().choose(count))
+                    next(response.photos.choose(count))
                 },
                 onError: { (error) -> Void in
                     guard let error = error as? MoyaError else {
@@ -52,13 +51,13 @@ struct ApiClient {
 
 extension Array {
 
-    var shuffled: Array {
+    var randomised: Array {
         var elements = self
-        return elements.shuffle()
+        return elements.randomise()
     }
 
     @discardableResult
-    mutating func shuffle() -> Array {
+    mutating func randomise() -> Array {
         indices.dropLast().forEach {
             guard case let index = Int(arc4random_uniform(UInt32(count - $0))) + $0, index != $0 else { return }
             swap(&self[$0], &self[index])
@@ -66,5 +65,5 @@ extension Array {
         return self
     }
 
-    func choose(_ n: Int) -> Array { return Array(shuffled.prefix(n)) }
+    func choose(_ n: Int) -> Array { return Array(randomised.prefix(n)) }
 }

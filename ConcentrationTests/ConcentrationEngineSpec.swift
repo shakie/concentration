@@ -26,6 +26,9 @@ class ConcentrationEngineSpec: QuickSpec {
         var observer: TestableObserver<GameEvent>!
         var engine: ConcentrationEngine!
         
+        var photo1: Photo!
+        var photo2: Photo!
+        
         describe("Given a ConcentrationEngine") {
             
             context("When prepareGame is called") {
@@ -41,7 +44,6 @@ class ConcentrationEngineSpec: QuickSpec {
                 }
                 
             }
-            
             
             context("When startGame is called") {
                 beforeEach {
@@ -86,7 +88,11 @@ class ConcentrationEngineSpec: QuickSpec {
                 }
                 
                 it("Then the events subject emits GameEvent.end") {
-                    expect(observer.events[2].value.element!) == GameEvent.end(-1.0)
+                    if case let GameEvent.end(time) = observer.events[2].value.element! {
+                        expect(time).to(beGreaterThan(-1))
+                    } else {
+                        fail("Game time not passed correctly")
+                    }
                 }
             }
 

@@ -27,11 +27,11 @@ class Photo: ALSwiftyJSONAble, Equatable, Hashable {
         self.imageUrl = imageUrl
     }
 
-    func match(_ photo: Photo) -> Bool {
+    func match(_ photo: Photo) -> Bool { //Match the photo by the id and image url, this is not the same as the Equatable below
         return id == photo.id && imageUrl == photo.imageUrl
     }
     
-    static func == (lhs: Photo, rhs: Photo) -> Bool {
+    static func == (lhs: Photo, rhs: Photo) -> Bool { //Is this actually the same Photo instance
         return lhs.id == rhs.id && lhs.imageUrl == rhs.imageUrl && lhs.uuid == rhs.uuid
     }
     

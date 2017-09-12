@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        setupButtonObservers()
+        setupObservables()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,9 +42,9 @@ class HomeViewController: UIViewController {
 
 }
 
-extension HomeViewController {
+extension HomeViewController: RxObservablesController {
     
-    fileprivate func setupButtonObservers() {
+    internal func setupObservables() {
         buttonEasy.rx.tap.observeOn(MainScheduler.instance)
             .subscribe(onNext:{ [weak self] in
                 self?.showGameController(1)

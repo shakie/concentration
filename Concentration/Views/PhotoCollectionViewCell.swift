@@ -18,7 +18,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     var revealed: Bool = false
         
     func turn(_ reveal: Bool) {
-        self.revealed = reveal
+        revealed = reveal
         
         UIView.transition(from: reveal ? imageViewBack : imageViewKitten,
                           to: reveal ? imageViewKitten : imageViewBack,

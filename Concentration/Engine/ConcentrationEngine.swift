@@ -22,8 +22,8 @@ enum GameEvent: Equatable {
     // Equatable, mainly used for unit testing to ensure that the PublishSubject emits the correct events
     static func ==(lhs: GameEvent, rhs: GameEvent) -> Bool{
         switch(lhs, rhs) {
-        case (let .end(time1), let .end(time2)):
-            return time1 == time2
+        case (.end, .end):
+            return true
         case (let .hide(photos1), let .hide(photos2)):
             return photos1 == photos2
         case (.start, .start):
@@ -57,8 +57,6 @@ class ConcentrationEngine {
     }
     
     var photos: [Photo] = [Photo]()
-    var playing = false
-    
     private var revealedPhotos: [Photo] = [Photo]()
     
     private var startTime: Date?
@@ -71,42 +69,38 @@ class ConcentrationEngine {
         }
     }
     
-    func prepareGame(_ difficulty: Int) {
+    func prepareGame(_ difficulty: Int) { //Setup the game emitting the event when we've loaded the kittens
         self.difficulty = difficulty
         fetchKittens()
     }
     
-    func startGame() {
+    func startGame() { //Start a new game
         startTime = Date()
-        playing = true
         events.onNext(.start)
     }
     
-    func stopGame() {
+    func stopGame() { //Stop the game an emit the time
         events.onNext(.end(elapsed))
-        playing = false
         events.onCompleted()
     }
     
-    func resetGame() {
+    func resetGame() { //Reset the game state
         startTime = nil
-        playing = false
-        events.onNext(.hide(revealedPhotos))
         revealedPhotos.removeAll()
         photos.removeAll()
         fetchKittens()
     }
     
-    func selectPhoto(_ photo: Photo?) {
+    func selectPhoto(_ photo: Photo?) { //Process the selected photo
         guard let photo = photo else { return }
 
-        if self.revealedPhotos.count % 2 == 0 {
+        if self.revealedPhotos.count % 2 == 0 { //There are an even number of revealed photos so this must be an unmatched Photo
             revealedPhotos.append(photo)
         } else {
             events.onNext(.disable)
             guard let currentPhoto = self.revealedPhotos.last else { return }
-            if !isMatch(photo, currentPhoto) {
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) { [weak self] in
+            if !isMatch(photo, currentPhoto) { //It's not a match so hide the kittens
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.75) { [weak self] in
                     let photo2 = self?.revealedPhotos.removeLast()
                     self?.events.onNext(.hide([photo, photo2!]))
                     self?.events.onNext(.enable)
@@ -117,7 +111,7 @@ class ConcentrationEngine {
             }
         }
         
-        if revealedPhotos.count == photos.count {
+        if revealedPhotos.count == photos.count { //All the photos are matched so let's stop the game
             stopGame()
         }
     }
@@ -126,7 +120,7 @@ class ConcentrationEngine {
         return photo1.match(photo2);
     }
     
-    func indexForPhoto(_ photo: Photo) -> Int? {
+    func indexForPhoto(_ photo: Photo) -> Int? { //Get the array position for the Photo
         for i in 0...photos.count-1 {
             if photos[i] == photo {
                 return i
@@ -135,15 +129,7 @@ class ConcentrationEngine {
         return nil
     }
     
-    func photoAtIndex(_ index: Int) -> Photo? {
-        if index < photos.count {
-            return photos[index]
-        }
-        
-        return nil
-    }
-    
-    private func fetchKittens() {
+    private func fetchKittens() { //Gets me some cute kittens
         loadPhotos({ [weak self] in
             self?.events.onNext(.loaded)
         }) { [weak self] error in
@@ -152,13 +138,13 @@ class ConcentrationEngine {
     }
     
     private func loadPhotos(_ complete: @escaping () -> Void, failure: @escaping (MoyaError) -> Void) {
-        let count = self.difficulty == 1 ? 6 : (difficulty == 2 ? 8 : 10)
+        let count = self.difficulty == 1 ? 6 : (difficulty == 2 ? 8 : 10) //Set the number of photos to return based on the difficulty
         client.getPhotos("kitten", count: count, next: { [weak self] photos in
             var duped = [Photo]()
             for photo in photos {
                 duped.append(contentsOf: [photo, Photo(photo.id, imageUrl: photo.imageUrl)])
             }
-            self?.photos = duped.shuffle()
+            self?.photos = duped.randomised
         }, complete: {
             complete()
         }) { error in

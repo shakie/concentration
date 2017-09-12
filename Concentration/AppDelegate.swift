@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .interval(1, scheduler: MainScheduler.instance)
             .subscribe(
                 onNext: { _ in
-                    print("Resource count: \(RxSwift.Resources.total)")
+//                    print("Resource count: \(RxSwift.Resources.total)")
                 }
             )
         
