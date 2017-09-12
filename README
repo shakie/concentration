@@ -3,8 +3,7 @@ Concentration Game
 
 I've managed dependencies with CocoaPods so please open the .xcworkspace
 
-I have made extensive use of RxSwift, mainly because I'm a huge fan of functional reactive programming. I would normally make use of the MVVM pattern but I have not used that for this particular
-project
+I have made extensive use of RxSwift, mainly because I'm a huge fan of functional reactive programming. I would normally make use of the MVVM pattern but I have not used that for this particular project
 
 I have included 3 levels of difficulty and also a high scores board, I have gone with a timer as I feel that makes the game a little more exciting. I have also tested on the iPad and it works well,
 I've used a fairly simple constraint based layout that should work well on most devices
