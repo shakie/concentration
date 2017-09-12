@@ -1,6 +1,8 @@
 Concentration Game
 ------------------
 
+I've managed dependencies with CocoaPods so please open the .xcworkspace
+
 I have made extensive use of RxSwift, mainly because I'm a huge fan of functional reactive programming. I would normally make use of the MVVM pattern but I have not used that for this particular
 project
 
