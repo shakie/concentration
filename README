@@ -1,0 +1,15 @@
+Concentration Game
+------------------
+
+I have made extensive use of RxSwift, mainly because I'm a huge fan of functional reactive programming. I would normally make use of the MVVM pattern but I have not used that for this particular
+project
+
+I have included 3 levels of difficulty and also a high scores board, I have gone with a timer as I feel that makes the game a little more exciting. I have also tested on the iPad and it works well,
+I've used a fairly simple constraint based layout that should work well on most devices
+
+My main aim has been to keep the game as simple as possible whilst also demonstrating the power of Rx, especially when it comes to working with events and binding data to UIKit controls
+
+I've included a log of the Resource count in the AppDelegate that prints out the current number of resources managed by Rx, this is mainly to demonstrate that I have employed effective memory
+mamangement by using the DisposeBag to automatically dispose of subscriptions to observables
+
+Oh and of course, kittens

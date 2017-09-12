@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7561D1DBA22A78B1B0C52150D4293FB32E913252",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4A0CE05B186F5354EC7B136DEDCE08708A5A94AA" : 9223372036854775807,
+    "7561D1DBA22A78B1B0C52150D4293FB32E913252" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A51BEAFB-78FC-40D9-9B3A-C12A4F7EB203",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4A0CE05B186F5354EC7B136DEDCE08708A5A94AA" : "BuxWebSockets\/",
+    "7561D1DBA22A78B1B0C52150D4293FB32E913252" : "Concentration\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Concentration",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Concentration.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.poblcreative.com:shakie\/buxwebsockets.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A0CE05B186F5354EC7B136DEDCE08708A5A94AA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.poblcreative.com:shakie\/concentration.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7561D1DBA22A78B1B0C52150D4293FB32E913252"
+    }
+  ]
+}
