@@ -17,7 +17,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     var revealed: Bool = false
         
-    func turn(_ reveal: Bool) {
+    func turn(_ reveal: Bool) { //Perform the transition animation for the selected cell
         revealed = reveal
         
         UIView.transition(from: reveal ? imageViewBack : imageViewKitten,

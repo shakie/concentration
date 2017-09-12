@@ -51,12 +51,12 @@ extension HighScoresViewController: RxObservablesController {
             }).disposed(by: disposables)
     }
     
-    fileprivate func setupTableView() { //Get the top 10 highest scores from the Realm
+    fileprivate func setupTableView() { //Get the top 20 highest scores from the Realm
         let realm = try! Realm()
         let scores = realm.objects(GameResult.self).sorted(byKeyPath: "time", ascending: true)
         if scores.count > 0 {
             var s = [GameResult]()
-            let limit = scores.count >= 10 ? 10 : scores.count
+            let limit = scores.count >= 20 ? 20 : scores.count
             for i in 0..<limit {
                 s.append(scores[i])
             }

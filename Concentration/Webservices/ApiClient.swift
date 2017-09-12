@@ -13,18 +13,18 @@ import RxSwift
 struct ApiClient {
     
     let provider: RxMoyaProvider<FiveHundredPx>
-    let disposeBag = DisposeBag()
+    let disposables = DisposeBag()
     
     init() {
         self.provider = RxMoyaProvider<FiveHundredPx>()
     }
     
-    func getPhotos(_ search: String, count: Int = 6, next: @escaping ([Photo]) -> Void, complete: @escaping () -> Void, failure: @escaping (MoyaError) -> Void) {
-        self.provider.request(.search(term: search))
+    func getPhotos(_ search: String, count: Int = 6, next: @escaping ([Photo]) -> Void, complete: @escaping () -> Void, failure: @escaping (MoyaError) -> Void) { //Bring me the kitties
+        provider.request(.search(term: search))
             .filterSuccessfulStatusCodes()
-            .map(to: Search.self).subscribe(
+            .map(to: Search.self).subscribe( //Map the response to the Search class
                 onNext: { (response) -> Void in
-                    next(response.photos.choose(count))
+                    next(response.photos.choose(count)) //Choose the specified number of random photos
                 },
                 onError: { (error) -> Void in
                     guard let error = error as? MoyaError else {
@@ -34,7 +34,7 @@ struct ApiClient {
                 }, onCompleted: {
                     complete()
                 }
-        ).disposed(by: self.disposeBag)
+        ).disposed(by: disposables)
     }
     
     //
