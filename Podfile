@@ -10,6 +10,8 @@ target 'Concentration' do
     pod 'SVProgressHUD'
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'RxSwiftExt'
+    pod 'RxDataSources', '~> 1.0'
     pod 'Kingfisher', '~> 3.0'
     
     def testing_pods

@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import RxSwift
+import Kingfisher
 
-class PhotoCollectionViewCell: UICollectionViewCell {
-
+class PhotoCollectionViewCell: UICollectionViewCell {    
+    
     @IBOutlet weak var imageViewKitten: UIImageView!
     @IBOutlet weak var imageViewBack: UIImageView!
     
-    var photo: Photo?
+    var revealed: Bool = false
+        
+    func turn(_ reveal: Bool) {
+        self.revealed = reveal
+        
+        UIView.transition(from: reveal ? imageViewBack : imageViewKitten,
+                          to: reveal ? imageViewKitten : imageViewBack,
+                          duration: 0.5,
+                          options: [.transitionFlipFromLeft, .showHideTransitionViews],
+                          completion: nil)
+    }
     
 }

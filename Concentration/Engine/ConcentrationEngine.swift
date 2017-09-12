@@ -10,11 +10,34 @@ import Foundation
 import Moya
 import RxSwift
 
-enum GameEvent {
+enum GameEvent: Equatable {
+    case loaded
     case start
+    case disable
+    case enable
     case end(TimeInterval)
-    case show([Photo])
     case hide([Photo])
+    case error(MoyaError)
+    
+    // Equatable, mainly used for unit testing to ensure that the PublishSubject emits the correct events
+    static func ==(lhs: GameEvent, rhs: GameEvent) -> Bool{
+        switch(lhs, rhs) {
+        case (let .end(time1), let .end(time2)):
+            return time1 == time2
+        case (let .hide(photos1), let .hide(photos2)):
+            return photos1 == photos2
+        case (.start, .start):
+            return true
+        case (.loaded, .loaded):
+            return true
+        case (let .error(error1), let .error(error2)):
+            return error1.errorDescription == error2.errorDescription
+        case (.disable, .disable), (.enable, .enable):
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 class ConcentrationEngine {
@@ -27,11 +50,16 @@ class ConcentrationEngine {
     }
     
     var difficulty = 1 //1 = easy, 2 = normal, 3 = hard
-    var players: [Player] = [Player]()
+    var difficultyPretty: String {
+        get {
+            return difficulty == 1 ? "Easy" : (difficulty == 2 ? "Medium" : "Hard")
+        }
+    }
+    
     var photos: [Photo] = [Photo]()
     var playing = false
     
-    private var turnedPhotos: [Photo] = [Photo]()
+    private var revealedPhotos: [Photo] = [Photo]()
     
     private var startTime: Date?
     var elapsed: TimeInterval {
@@ -43,47 +71,59 @@ class ConcentrationEngine {
         }
     }
     
-    func startGame(_ level: Int, failure: @escaping (MoyaError) -> Void) {
-        difficulty = level
-        startTime = Date.init()
+    func prepareGame(_ difficulty: Int) {
+        self.difficulty = difficulty
+        fetchKittens()
+    }
+    
+    func startGame() {
+        startTime = Date()
         playing = true
-        loadPhotos({ [unowned self] in
-            self.events.onNext(.start)
-        }) { (error) in
-            failure(error)
-        }
+        events.onNext(.start)
     }
     
     func stopGame() {
+        events.onNext(.end(elapsed))
+        playing = false
+        events.onCompleted()
+    }
+    
+    func resetGame() {
         startTime = nil
         playing = false
+        events.onNext(.hide(revealedPhotos))
+        revealedPhotos.removeAll()
         photos.removeAll()
-        turnedPhotos.removeAll()
-        events.onNext(.end(elapsed))
+        fetchKittens()
     }
     
     func selectPhoto(_ photo: Photo?) {
         guard let photo = photo else { return }
-        
-        events.onNext(.show([photo]))
-        if self.turnedPhotos.count % 2 != 0 {
-            turnedPhotos.append(photo)
+
+        if self.revealedPhotos.count % 2 == 0 {
+            revealedPhotos.append(photo)
         } else {
-            let currentPhoto = self.photos.last
-            if photo != currentPhoto {
-                turnedPhotos.append(photo)
+            events.onNext(.disable)
+            guard let currentPhoto = self.revealedPhotos.last else { return }
+            if !isMatch(photo, currentPhoto) {
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) { [weak self] in
+                    let photo2 = self?.revealedPhotos.removeLast()
+                    self?.events.onNext(.hide([photo, photo2!]))
+                    self?.events.onNext(.enable)
+                }
             } else {
-                events.onNext(.hide([photo, self.turnedPhotos.removeLast()]))
+                revealedPhotos.append(photo)
+                events.onNext(.enable)
             }
         }
         
-        if turnedPhotos.count == photos.count {
+        if revealedPhotos.count == photos.count {
             stopGame()
         }
     }
     
-    func isMatch(photo1: Photo, photo2: Photo) -> Bool {
-        return photo1 == photo2;
+    func isMatch(_ photo1: Photo, _ photo2: Photo) -> Bool {
+        return photo1.match(photo2);
     }
     
     func indexForPhoto(_ photo: Photo) -> Int? {
@@ -103,12 +143,24 @@ class ConcentrationEngine {
         return nil
     }
     
-    func loadPhotos(_ complete: @escaping () -> Void, failure: @escaping (MoyaError) -> Void) {
+    private func fetchKittens() {
+        loadPhotos({ [weak self] in
+            self?.events.onNext(.loaded)
+        }) { [weak self] error in
+            self?.events.onNext(.error(error))
+        }
+    }
+    
+    private func loadPhotos(_ complete: @escaping () -> Void, failure: @escaping (MoyaError) -> Void) {
         let count = self.difficulty == 1 ? 6 : (difficulty == 2 ? 8 : 10)
-        client.getPhotos("kitten", count: count, next: { [unowned self] photos in
-            self.photos = photos
-            }, complete: {
-                complete()
+        client.getPhotos("kitten", count: count, next: { [weak self] photos in
+            var duped = [Photo]()
+            for photo in photos {
+                duped.append(contentsOf: [photo, Photo(photo.id, imageUrl: photo.imageUrl)])
+            }
+            self?.photos = duped.shuffle()
+        }, complete: {
+            complete()
         }) { error in
             failure(error)
         }

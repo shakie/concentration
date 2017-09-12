@@ -9,28 +9,34 @@
 import Foundation
 import Moya_SwiftyJSONMapper
 import SwiftyJSON
+import RxDataSources
 
 class Photo: ALSwiftyJSONAble, Equatable, Hashable {
     
+    let uuid = UUID.init()
     let id: String
-    let image_url: String
+    let imageUrl: String
     
     required init(jsonData: JSON) {
         self.id = jsonData["id"].stringValue
-        self.image_url = jsonData["image_url"].stringValue
+        self.imageUrl = jsonData["image_url"].stringValue
     }
     
-    init(_ id: String, image_url: String) {
+    init(_ id: String, imageUrl: String) {
         self.id = id
-        self.image_url = image_url
+        self.imageUrl = imageUrl
     }
 
+    func match(_ photo: Photo) -> Bool {
+        return id == photo.id && imageUrl == photo.imageUrl
+    }
+    
     static func == (lhs: Photo, rhs: Photo) -> Bool {
-        return lhs.id == rhs.id && lhs.image_url == rhs.image_url
+        return lhs.id == rhs.id && lhs.imageUrl == rhs.imageUrl && lhs.uuid == rhs.uuid
     }
     
     var hashValue: Int {
-        return id.hashValue ^ image_url.hashValue
+        return id.hashValue ^ imageUrl.hashValue
     }
     
 }

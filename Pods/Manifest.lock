@@ -27,11 +27,21 @@ PODS:
     - RxSwift (~> 3.6)
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
+  - RxDataSources (1.0.4):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
   - RxNimble (3.0.0):
     - Nimble (~> 7.0)
     - RxBlocking (~> 3.0)
     - RxSwift (~> 3.0)
+  - RxRealm (0.6.0):
+    - RealmSwift (~> 2.5)
+    - RxSwift (~> 3.2)
   - RxSwift (3.6.1)
+  - RxSwiftExt (2.5.1):
+    - RxSwiftExt/Core (= 2.5.1)
+  - RxSwiftExt/Core (2.5.1):
+    - RxSwift (~> 3.4)
   - RxTest (3.6.1):
     - RxSwift (~> 3.6)
   - SVProgressHUD (2.2)
@@ -46,8 +56,11 @@ DEPENDENCIES:
   - RealmSwift
   - RxBlocking
   - RxCocoa
+  - RxDataSources (~> 1.0)
   - RxNimble
+  - RxRealm
   - RxSwift
+  - RxSwiftExt
   - RxTest
   - SVProgressHUD
   - SwiftyJSON
@@ -64,12 +77,15 @@ SPEC CHECKSUMS:
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxBlocking: 4f4bd5732e8b952e54ae8a57739bcfb645de12bc
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxDataSources: b3389acc5fe2eefb8fcd81a2b76a876ad08bc82a
   RxNimble: 64ef7b0eb8edb423b088773f35d14dda37593460
+  RxRealm: 323de579b50b5e0f4a3e087d5925021f976ffaf1
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  RxSwiftExt: ec25c6df68d15ad6fe326792d60452b52e83d606
   RxTest: 1d00348a7848c91ab5bf5d197d2378aa6b2bb356
   SVProgressHUD: 3f37f3409ddb15f35c99315ae7dc33c474aa3256
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: eb19bf4bc2ed1b6f45731ecee64dd1737575b0e1
+PODFILE CHECKSUM: b9e23ea627e4cf82398d043055f5f0dd09b15c64
 
 COCOAPODS: 1.2.0
